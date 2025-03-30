@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "500g chicken breast",
+      "1 cup yogurt",
+      "2 tbsp tikka masala paste",
+      "1 cup tomato puree",
+      "1 cup cream",
+      "Spices (cumin, coriander, turmeric)"
+    ],
+    "instructions": [
+      "Marinate the chicken in yogurt and spices for 1 hour.",
+      "Grill the chicken until cooked through.",
+      "In a pan, sauté the tikka masala paste and tomato puree.",
+      "Add the grilled chicken and simmer for 10 minutes.",
+      "Stir in the cream and cook for another 5 minutes.",
+      "Serve with rice or naan bread."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Chicken Tikka Masala",
+    "summary": "A flavorful Indian dish with marinated chicken in a creamy tomato sauce.",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "500g chicken breast",
+      "1 cup yogurt",
+      "2 tbsp tikka masala paste",
+      "1 cup tomato puree",
+      "1 cup cream",
+      "Spices (cumin, coriander, turmeric)"
+    ],
+    "instructions": [
+      "Marinate the chicken in yogurt and spices for 1 hour.",
+      "Grill the chicken until cooked through.",
+      "In a pan, sauté the tikka masala paste and tomato puree.",
+      "Add the grilled chicken and simmer for 10 minutes.",
+      "Stir in the cream and cook for another 5 minutes.",
+      "Serve with rice or naan bread."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Avocado Toast",
+    "summary": "A simple and healthy breakfast option with mashed avocado on toasted bread.",
+    "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Chicken Tikka Masala",
+    "summary": "A flavorful Indian dish with marinated chicken in a creamy tomato sauce.",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in boiling salted water until al dente.",
+      "Fry the pancetta in a pan until crispy.",
+      "Whisk the eggs and Parmesan in a bowl.",
+      "Drain the spaghetti and add it to the pancetta pan.",
+      "Remove from heat and quickly stir in the egg mixture.",
+      "Serve immediately with extra Parmesan and pepper."
+    ]
+  }
+]
