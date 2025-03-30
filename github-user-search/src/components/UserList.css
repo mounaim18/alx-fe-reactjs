@@ -1,0 +1,17 @@
+/* src/components/UserList/UserList.css */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.user-list p {
+  text-align: center;
+  color: #586069;
+  grid-column: 1 / -1;
+  padding: 2rem;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  border: 1px solid #d8dee2;
+}

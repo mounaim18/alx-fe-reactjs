@@ -1,0 +1,26 @@
+# .gitignore
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build directories
+/dist
+/build
+/node_modules
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
