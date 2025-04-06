@@ -1,3 +1,76 @@
+// import axios from "axios";
+
+// const GITHUB_API_URL = "https://api.github.com";
+
+// export const searchUsers = async (query) => {
+//   try {
+//     const response = await axios.get(`${GITHUB_API_URL}/search/users`, {
+//       params: { q: query },
+//     });
+//     return response.data.items;
+//   } catch (error) {
+//     console.error("Error searching users:", error);
+//     throw error;
+//   }
+// };
+
+// // Add more API functions as needed
+// src/services/githubService.js
+
+// import axios from "axios";
+
+// const API_URL =
+//   import.meta.env.VITE_APP_GITHUB_API_URL || "https://api.github.com";
+
+// const axiosInstance = axios.create({
+//   baseURL: API_URL,
+//   headers: {
+//     Authorization: import.meta.env.VITE_APP_GITHUB_API_KEY
+//       ? `token ${import.meta.env.VITE_APP_GITHUB_API_KEY}`
+//       : undefined,
+//     Accept: "application/vnd.github.v3+json",
+//   },
+// });
+
+// export const searchUsers = async (query) => {
+//   try {
+//     const response = await axiosInstance.get("/search/users", {
+//       params: { q: query },
+//     });
+//     return response.data.items;
+//   } catch (error) {
+//     console.error("Error searching users:", error);
+//     throw error;
+//   }
+// };
+
+// export const getUserDetails = async (username) => {
+//   try {
+//     const response = await axiosInstance.get(`/users/${username}`);
+//     return response.data;
+//   } catch (error) {
+//     console.error("Error fetching user details:", error);
+//     throw error;
+//   }
+// };
+
+// src/services/githubService.js
+// import axios from "axios";
+
+// const API_BASE_URL = "https://api.github.com";
+
+// export const fetchUserData = async (username) => {
+//   try {
+//     const response = await axios.get(`${API_BASE_URL}/users/${username}`);
+//     return response.data;
+//   } catch (error) {
+//     if (error.response && error.response.status === 404) {
+//       throw new Error("User not found");
+//     }
+//     throw new Error("Failed to fetch user data");
+//   }
+// };
+
 // src/services/githubService.js
 import axios from "axios";
 
@@ -47,7 +120,7 @@ export const searchUsers = async ({
     const queryParts = [];
     if (username) queryParts.push(`${username.trim()} in:login`);
     if (location) queryParts.push(`location:${location.trim()}`);
-    if (minRepos) queryParts.push(`repos:>=${Math.max(0, minRepos)}`);
+    if (minRepos) queryParts.push(`repos:>${Math.max(0, minRepos)}`);
     const query = queryParts.join(" ");
 
     // Search users
@@ -61,6 +134,7 @@ export const searchUsers = async ({
     const usersWithDetails = await Promise.all(
       items.map(async (user) => {
         try {
+          // Check cache first
           if (userCache.has(user.login)) {
             return userCache.get(user.login).data;
           }
@@ -80,6 +154,7 @@ export const searchUsers = async ({
             html_url: userDetails.html_url,
           };
 
+          // Add to cache
           userCache.set(user.login, {
             data: userData,
             timestamp: Date.now(),
