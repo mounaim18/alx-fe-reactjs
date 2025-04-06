@@ -3,17 +3,11 @@ import React, { useState, useCallback, useEffect } from "react";
 import { searchUsers } from "../../services/githubService";
 import UserCard from "../UserCard/UserCard";
 
-const Search = () => {
+const Search = ({ setResults }) => {
   const [searchParams, setSearchParams] = useState({
     username: "",
     location: "",
     minRepos: "",
-  });
-  const [results, setResults] = useState({
-    users: [],
-    totalCount: 0,
-    page: 1,
-    hasMore: false,
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -26,29 +20,25 @@ const Search = () => {
     }));
   };
 
-  const performSearch = async (page = 1) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoading(true);
     setError(null);
 
     try {
-      const data = await searchUsers({ ...searchParams, page });
-      setResults((prev) => ({
-        users: page === 1 ? data.users : [...prev.users, ...data.users],
+      const data = await searchUsers({ ...searchParams, page: 1 });
+      setResults({
+        users: data.users,
         totalCount: data.totalCount,
-        page,
+        page: 1,
         hasMore: data.hasMore,
-      }));
+      });
     } catch (err) {
       setError(err.message);
       setResults({ users: [], totalCount: 0, page: 1, hasMore: false });
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    performSearch(1);
   };
 
   return (
@@ -100,10 +90,17 @@ const Search = () => {
             <button
               type="submit"
               className="px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              disabled={loading}
             >
-              Search
+              {loading ? "Searching..." : "Search"}
             </button>
           </div>
+
+          {error && (
+            <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+              {error}
+            </div>
+          )}
         </form>
       </div>
     </div>
